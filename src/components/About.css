@@ -1,0 +1,31 @@
+#about {
+    min-height: 70vh;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+
+.food {
+    height:220px;
+    width: 220px;
+}
+
+.intro-container {
+    padding-top:100px;
+    width: 90%;
+}
+
+.intro {
+    font-size: 1.3em;
+    padding: 15px;
+    margin: 15px 0;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius:2rem;
+}
+
+@media (min-width: 768px) {
+
+    .intro-container {
+        width: 50%;
+    } 
+}

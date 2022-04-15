@@ -1,0 +1,32 @@
+#roadmap {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+
+.content-container {
+    padding-top:100px;
+    width: 90%;
+}
+
+.roadmap-wrapper {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.roadmap-item {
+    padding: 15px;
+    margin: 15px 0;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius:2rem;
+}
+
+.roadmap-percent {
+    font-size: 2.2em;
+}
+
+.roadmap-content {
+    font-size: 1.5em;
+}

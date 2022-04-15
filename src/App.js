@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+import Nav from './components/Nav'
+import Main from './components/Main'
+import About from './components/About'
+import Roadmap from './components/Roadmap'
+import Team from './components/Team'
+import Footer from './components/Footer'
+import SupplyContextWrapper from './context/supplyContextWrapper';
 
-function App() {
+const App = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SupplyContextWrapper>
+        <div id="bg"></div>
+        <div className="App">
+          <Nav></Nav>
+          <Main></Main>
+          <About></About>
+          <Roadmap></Roadmap>
+          <Team></Team>
+          <Footer></Footer>
+        </div>
+      </SupplyContextWrapper>
+    </>
   );
 }
 

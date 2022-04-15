@@ -1,0 +1,117 @@
+.mint-container {
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    margin: auto;
+}
+
+.account {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    background: linear-gradient(20deg, rgb(218, 223, 141) 0%, rgb(255, 152, 204) 50%, rgb(139, 196, 243) 100%);
+    padding:10px;
+    border-radius:50px;
+    margin:10px auto;
+    border: 2px solid black;
+    max-width: 100%;
+}
+
+.number-of-nft {
+    margin-top:10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.mint-button-container {
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.operand-container {
+    background: rgb(255, 201, 139);
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 60%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.operand, .number {
+    font-size: 1.2em;
+    padding: 10px 10px;
+    background:none;
+    border: none;
+    outline: none;
+}
+
+.operand:hover {
+    color:red;
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    background: rgb(255, 201, 139);
+    border-radius:50px;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.connect-btn {
+    height: 40px;
+    margin: 10px 0;
+    width:100%;
+}
+
+.connect-btn:hover {
+    background: rgb(255, 229, 159);
+}
+
+.mint-btn {
+    width: 30%;
+}
+
+.mint-btn:hover {
+    background: rgb(255, 229, 159);
+}
+
+.box {
+    margin: 10px auto 5px auto;
+    width: 200px;
+}
+
+.msg {
+    width: 150px;
+    max-height: 60px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+    .mint-btn {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .operand-container {
+        width: 300px;
+    }
+
+    .number-of-nft {
+        margin-top:0px;
+        font-size: 2em;
+    }
+
+    .btn, #number {
+        font-size: 1.2em;
+    }
+ }
